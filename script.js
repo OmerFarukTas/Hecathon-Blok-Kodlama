@@ -1,5 +1,4 @@
-const apiKey = config.apiKey;
-const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
+const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${process.env.REACT_APP_API_KEY}`;
         let currentLanguage = "tr";  // Başlangıç dili Türkçe olarak ayarlandı
 
         const texts = {
